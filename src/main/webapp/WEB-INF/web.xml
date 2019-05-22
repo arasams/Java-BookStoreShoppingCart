@@ -20,8 +20,10 @@
     <servlet-name>CartController</servlet-name>
     <servlet-class>com.pluralsight.CartController</servlet-class>
   </servlet>
+    
   <servlet-mapping>
     <servlet-name>CartController</servlet-name>
       <url-pattern>/cart/*</url-pattern>
   </servlet-mapping>
+  
 </web-app>

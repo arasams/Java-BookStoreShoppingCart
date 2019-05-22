@@ -31,7 +31,7 @@
 
       	 			<c:forEach items="${cart.cartItems}" var="cartItem" varStatus="loop">
                   <tr>
-                  <form name="cart_form" action="/cart/update"></form>
+                  <form name="cart_form" action="/cart/update">
                   <input type="hidden" name="index" value="<c:out value='${loop.index}'/>" />
                       <td> ${ cartItem.getTitle() } </td>
                       <td> ${ cartItem.getAuthor() } </td>
@@ -43,7 +43,7 @@
                       <td><input type="submit" value="Update" /> 
                           <input type="submit" formaction="/cart/Delete" value="Delete" /> 
                       </td>
-                      
+                      </form>
                   </tr>
               </c:forEach>
 	        </table>
